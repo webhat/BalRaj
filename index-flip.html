@@ -1,0 +1,152 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>BalRaj - Indian Restaurant</title>
+        <style type="text/css">
+            body {
+                background-image : url('Balraj%20-%20Indian%20Restaurant%20-%20Banner.jpg');
+                background-repeat : no-repeat;
+                background-attachment : fixed;
+                background-position : center top;
+                background-size : 853px 152px;
+            }
+            .central {
+                position : absolute;
+                text-align : center;
+                width : 100%;
+            }
+            .logo {
+                width : 100%;
+                top : 79px;
+            }
+            #rightmenu {
+                width : 25%;
+                float : right;
+                margin-right : 22%;
+            }
+            #leftmenu {
+                width : 25%;
+                float : left;
+                margin-left : 22%;
+            }
+            .rightmenupage {
+                background-image : url('corner-right.png');
+                background-repeat : no-repeat;
+                background-size : 177px 133px;
+                float : right;
+                bottom : 20px;
+                background-position : right bottom;
+                opacity : 0.7;
+                filter : alpha(opacity=70);
+            }
+            .leftmenupage {
+                background-image : url('corner-left.png');
+                background-repeat : no-repeat;
+                background-size : 177px 133px;
+                float : left;
+                bottom : 20px;
+                background-position : left bottom;
+                opacity : 0.7;
+                filter : alpha(opacity=70);
+            }
+            .down {
+                width : 100%;
+                top : 152px;
+                display : inline;
+            }
+            .menutext {
+                margin : 0px;
+                text-align : justify;
+            }
+            #myBook {
+                display : none;
+                position : absolute;
+                left : 400px;
+                top : 270px;
+                width : 604px;
+                height : 362px;
+            
+            }
+            .imBookPage {
+                position : absolute;
+                left : 0px;
+                top : 0px;
+                width : 300px;
+                height : 360px;
+                color : #000;
+                overflow : hidden;
+                border : solid 1px #000;
+            }</style>
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.imBookFlip-1.0.js"></script>
+    </head>
+    <body>
+        <div class="logo central"><img width="171" height="73"
+                src="Balraj%20-%20Indian%20Restaurant-logo.jpg"
+                alt="BalRaj - Indian Restaurant - Logo" /></div>
+        <div class="central down" id="myBook" style="display:none;">
+            <div class="imBookPage">Frontpage</div>
+            <div class="imBookPage"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    enim augue, commodo et interdum semper, lobortis quis justo. Pellentesque varius
+                    arcu nec urna convallis ultricies. Donec tempus purus et ipsum vulputate ut
+                    euismod elit gravida. Curabitur sed eros ut quam fermentum fermentum. Aliquam
+                    vestibulum enim at metus dictum egestas. Nullam viverra sodales laoreet.
+                    Maecenas dui velit, interdum a congue eget, placerat nec dui. Sed nec viverra
+                    tortor. Pellentesque ut purus et nisl accumsan dignissim in sagittis ligula.
+                    Pellentesque id venenatis dui.</p>
+                <p>Donec placerat dui eget quam elementum eu scelerisque erat pharetra. Phasellus
+                    sit amet ullamcorper ante. Vivamus ultrices, neque eget suscipit fermentum, nibh
+                    sapien porta lacus, at mattis orci nibh quis nisi. Nunc pretium tellus id urna
+                    ornare dapibus. Pellentesque at ante id orci feugiat tempus. Donec consectetur
+                    nunc tempus est congue lacinia. Pellentesque fermentum leo a erat malesuada
+                    fermentum. Suspendisse potenti. Nunc risus massa, interdum id dignissim ut,
+                    mattis sit amet quam. Sed vehicula est at magna vulputate pretium ac vulputate
+                    dolor.</p></div>
+            <div class="imBookPage"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur purus orci, facilisis sit amet dictum a, porta vel nibh. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    Vestibulum mattis mattis risus, ac sodales nulla commodo nec. Cum sociis natoque
+                    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent
+                    blandit vulputate dui, a sodales ipsum dictum eu. Maecenas iaculis tortor sit
+                    amet dui cursus lobortis. Quisque tristique felis ut magna bibendum viverra.
+                    Aliquam consequat, purus vitae tincidunt vehicula, metus risus porttitor lectus,
+                    eu congue felis purus ut eros. Cras quis nibh est, vel cursus velit. Phasellus
+                    adipiscing leo a nisl commodo congue. Integer imperdiet est nisi, quis fringilla
+                    velit. Integer facilisis, arcu nec gravida hendrerit, odio leo dictum ipsum,
+                    vitae faucibus eros quam vel neque. Suspendisse in turpis risus, eu aliquam
+                    dolor.</p>
+                <p> Phasellus orci diam, mollis sed luctus id, luctus imperdiet enim. Sed non justo
+                    vitae purus bibendum egestas at vel urna. Ut congue arcu sed nisi vehicula et
+                    porttitor ipsum congue. Fusce laoreet mauris eget nunc volutpat eu auctor magna
+                    cursus. Aenean at velit tempor risus pretium dignissim eu adipiscing neque.
+                    Nullam at enim lacus. Sed a arcu elit. Sed pellentesque purus quis tellus
+                    interdum blandit. Nullam laoreet felis eget ipsum consequat dictum sit amet nec
+                    arcu. Integer imperdiet sagittis lectus, ut sollicitudin mauris elementum quis.
+                    Morbi consequat convallis aliquet. Mauris dignissim, dolor in condimentum
+                    adipiscing, ante orci facilisis purus, eget auctor risus arcu vel sapien.</p>
+                <p id="nextpage"><br /><br /></p>
+            </div>
+        </div>
+        <script type="text/javascript">
+                //$('#rightmenu').fadeOut('slow');
+                $('#nextpage').click(function() {
+  $('#rightmenu').animate({
+    opacity: 0.25,
+    left: '+=50',
+    width: 0,
+    fontSize: 0
+  }, 5000, function() {
+    // Animation complete.
+  });
+});
+$(document).ready( function() {
+	var myBook = $("#myBook").imBookFlip({
+		page_class: 'imBookPage',
+		autoFlip: 'auto',
+		autoFlipSpeed: 5000
+	});
+	myBook.create();
+});	
+        </script>
+    </body>
+</html>

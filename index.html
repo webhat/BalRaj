@@ -1,0 +1,458 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>BalRaj - Indian Restaurant</title>
+        <style type="text/css">
+            body {
+                background-image : url('Balraj%20-%20Indian%20Restaurant%20-%20Banner.jpg');
+                background-repeat : no-repeat;
+                background-attachment : fixed;
+                background-position : center top;
+                background-size : 853px 152px;
+            }
+            .central {
+                position : absolute;
+                text-align : center;
+                width : 100%;
+            }
+            .logo {
+                width : 100%;
+                top : 79px;
+            }
+            .frontpage {
+                background-image : url('1x1.gif');
+                position : absolute;
+                text-align : center;
+                width : 853px;
+                top : 152px;
+                z-index : 10;
+                width : 853px;
+                height : 700px;
+                margin-left : 21.3%;
+            }
+            #myBook {
+                display : none;
+                position : absolute;
+                margin-right : 22%;
+                margin-left : 21.3%;
+                top : 152px;
+                width : 853px;
+                height : 700px;
+            
+            }
+            .imBookPage {
+                background-image : url('1x1.gif');
+                position : absolute;
+                left : 0px;
+                top : 0px;
+                width : 421px;
+                height : 700px;
+                color : #000;
+                overflow : hidden;
+                border : solid 2px #000;
+                margin-left : 5px;
+                margin-right : 5px;
+                text-align : justify;
+                clear:both;
+            }
+            .header {             
+                color: #c00000;   
+                text-align : center;
+                font-size:200%;
+                font-weight:bold;
+                margin-top: 2px;
+            }
+            .reduct {
+                font-size: 120%;
+            }
+            .subheader {
+                text-align : center;
+                font-size:75%;
+                font-weight:bold;
+                margin-right: 10px;
+            }
+            .product {
+                color: #c00000;
+                float: left;
+            }
+            .price {
+                color: #c00000;
+                float: right;
+                margin-right: 15px;
+            }
+            .description {
+                clear:both;
+                margin-right: 15px;
+                color: grey;
+                font-size: 70%;
+                font-style:italic;
+            }
+            .emph {
+                font-style:normal;
+                font-weight: bold;
+            }
+        </style>
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.imBookFlip-1.0.js"></script>
+    </head>
+    <body>
+        <div class="logo central"><img width="171" height="73"
+                src="Balraj%20-%20Indian%20Restaurant-logo.jpg"
+                alt="BalRaj - Indian Restaurant - Logo" /></div>
+        <div class="frontpage">Frontpage</div>
+        <div class="central down" id="myBook" style="display:none;">
+            <div class="imBookPage">Frontpage</div>
+            <!-- Afhaal -->
+            <div class="imBookPage">
+                <div class="header">Voorgerechten</div>
+                <div><div class="product">Papadam</div><div class="price">&#8364; 1,00</div><div class="description" lang="nl">Gekruide krokante pannenkoek. 2 stuks.</div><div class="description" lang="en">Spicy crispy pancake. 2 pieces.</div></div>
+                <div><div class="product">Murg Shorba (Chicken Soup)</div><div class="price">&#8364; 3,50</div><div class="description" lang="nl">Op Indiase wijze gekruide kippensoep.</div><div class="description" lang="en">Indian style, spicy chicken soup.</div></div>
+                <div><div class="product">Mulligatawny Shorba</div><div class="price">&#8364; 3,50</div><div class="description" lang="nl">Op Indiase wijze gekruide kerriesoep met linzen en een schijfje citroen.</div><div class="description" lang="en">Indian style, spicy curry soup with lentils and a slice of lemon.</div></div>
+                <div><div class="product">Palak-Dahi Shorba</div><div class="price">&#8364; 3,50</div><div class="description" lang="nl">Gekruide spinazie soep met een scheutje yoghurt.</div><div class="description" lang="en">Spicy spinach soup with a little bit of yoghurt.</div></div>
+                <div><div class="product">Onion Bhaji (Pakora)</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Julienne gesneden uien  gemengd met medium hete Indiase kruiden, Kashmiri massala en kikkererwten meel, gefrituurd en geserveerd met 2 sausjes.</div><div class="description" lang="en">Julienne cut onions mixed with medium hot Indian spices, Kashmiri masala and gram flour, deep-fried and served with 2 sauces.</div></div>
+                <div><div class="product">Vegetable Samosa</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Groente gevuld in bladerdeeg, gefrituurd, 2 stuks en geserveerd met 2 sausjes.</div><div class="description" lang="en">Vegetables filled in a pastry envelope, deep-fried, 2 pieces served with 2 sauces.</div></div>
+                <div><div class="product">Chicken Samosa</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Gekruid kipfilet (gehakt) in bladerdeeg, gefrituurd, 2 stuks en geserveerd met 2 sausjes.</div><div class="description" lang="en">Spicy chicken (minced) filled in a pastry envelope, deep-fried, 2 pieces served with 2 sauces.</div></div>
+                <div><div class="product">Reshami Kebab</div><div class="price">&#8364; 4,75</div><div class="description" lang="nl">Gekruide kebabs van kip. Een typisch mughalai gerecht geserveerd zoals in Oud-Delhi in de 15de eeuw.</div><div class="description" lang="en">Spicy kebabs made of chicken. A typical mughalai dish as served in old delhi since the 15th century.</div></div>
+                <div><div class="product">Mint Tikka</div><div class="price">&#8364; 4,75</div><div class="description" lang="nl">In Tandoori kruiden  en mint gemarineerde stukjes kip uit de oven,geserveerd met 2 sausjes.</div><div class="description" lang="en">In Tandoori spices and mint marinated pieces of chicken from the oven, served with 2 sauces.</div></div>
+                <div><div class="product">Chicken Chaat</div><div class="price">&#8364; 4,75</div><div class="description" lang="nl">Overheerlijke licht gekruide salade met warme stukjes kip en een dressing van honing en mosterd.</div><div class="description" lang="en">A delicious, lightly spicy, salad prepared with hot chicken and a dressing of honey and mustard.</div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Kip Gerechten</span> / <span lang="en">Chicken Dishes</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Chicken Rogan Josh</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl">Kipfilet bereid in een melange van Indiase kruiden, een scheutje yoghurt en veel tomaten. Kortom een typisch Indiase curry. Dit gerecht is medium heet 
+                    en kan indien u wenst pittig bereid worden.</div><div class="description" lang="en">
+                    Boneless chicken prepared with Indian spices, a little bit of yoghurt and lots of tomatoes. This is a typical Indian curry.</div></div>
+                <div><div class="product">Chicken Shahi Korma</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Mild gekruide kip bereid in een zoet romige saus, bestaande uit room, kokosnoot, amandelen, cashewnoten, rozijnen,
+                cardamon, ananas en Indiase kerrie kruiden.</div><div class="description" lang="en">Mild spiced chicken cooked in a sweet creamy sauce, which is made of cream, coconut, almonds, cashewnuts, raisins,
+                cardamon, pineapple and Indian curry spices.	</div></div>
+                <div><div class="product">Chicken Jaipuri</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl">Kipfilet bereid in mango chutney en Indiase kruiden. 
+                Dit gerecht is licht gekruid en zoet.</div><div class="description" lang="en">Chicken cooked in mango chutney and Indian spices. 
+                This dish is mildly spiced and sweet.</div></div>
+                <div><div class="product">Chicken Kashmiri</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl">Kip bereid in een hete kerrie saus, bestaande uit fenegriek bladeren, mint saus en hete Kashmiri masala.</div><div class="description" lang="en">Chicken cooked in a hot curry sauce, which is made of
+                    fenugreek leaves, mint sauce and hot Kashmiri masala.</div></div>
+                <div><div class="product">Chicken Madras</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl">Kip bereid in een hete kerrie saus, bereid in een 
+                melange van sterke specerijen.</div><div class="description" lang="en">Chicken cooked in hot mixed curry spices.</div></div>
+                <div><div class="product">Chicken Mughalai</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Kip bereid met kokosnoot, amandelen, cashewnoten, rozijnen, fenegriek bladeren en Indiase kruiden. </div><div class="description" lang="en">Chicken cooked with coconut, almonds, cashewnuts, raisins, fenegreek leaves and Indian curry spices.</div></div>
+                <div><div class="product">Chicken Jal Frezi</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl">Kip bereid met paprika en uien in een medium gekruide 
+                of hete kerrie saus.</div><div class="description" lang="en">Chicken prepared with paprika and onions in a medium spiced or hot curry sauce.</div></div>
+                <div><div class="product">Saag Chicken</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl">Kip bereid in, op traditioneel Indiase wijze, medium gekruide spinazie.</div><div class="description" lang="en">Chicken cooked in, a traditional indian style, medium spiced spinach.</div></div>
+                <div><div class="product">Chicken Balti Curry</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Kip bereid in een Kashmiri Punjabi stijl met verse koriander, knoflook, tomaten en fenegriek bladeren.</div><div class="description" lang="en">Chicken cooked in a Kashmiri Punjabi style with garden fresh coriander, garlic, tomatoes and fenugreek leaves.</div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>
+            <div class="imBookPage">
+                <div class="header">Lamsvlees Gerechten / Lambmeat Dishes</div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Lamb Rogan Josh</div><div class="price">&#8364; 13,50</div><div class="description" lang="nl">Lamsvlees bereid in een melange van Indiase kruiden, een scheutje yoghurt en veel tomaten. Kortom een typisch Indiase curry. Dit gerecht is medium heet en kan indien u wenst pittig bereid worden.</div><div class="description" lang="en">Boneless lambmeat prepared with Indian spices, a little bit of yoghurt and lots of tomatoes.This is a typical Indian curry.</div></div>
+                <div><div class="product">Lamb Shahi Korma</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Mild gekruide lamsvlees bereid in een zoet romige saus, bestaande uit room, kokosnoot,amandelen, cashewnoten, rozijnen, cardamon, ananas en Indiase kerrie kruiden.</div><div class="description" lang="en">Mild spiced lambmeat cooked in a sweet creamy sauce, 
+                which is made of cream, coconut,almonds, cashewnuts, raisins,
+                cardamon, pineapple and Indian curry spices.	</div></div>
+                <div><div class="product">Lamb Jaipuri</div><div class="price">&#8364; 13,50</div><div class="description" lang="nl">Lamsvlees bereid in mango chutney en Indiase kruiden.
+                Dit gerecht is licht gekruid en zoet.</div><div class="description" lang="en">Lambmeat cooked in mango chutney and Indian spices. 
+                This dish is mildly spiced and sweet.</div></div>
+                <div><div class="product">Lamb Kashmiri</div><div class="price">&#8364; 13,50</div><div class="description" lang="nl">Lamsvlees bereid in een hete kerrie saus, bestaande uit fenegriek bladeren, mint saus en hete Kashmiri masala.</div><div class="description" lang="en">Lambmeat cooked in a hot curry sauce, which is made of
+                fenugreek leaves, mint sauce and hot Kashmiri masala.</div></div>
+                <div><div class="product">Lamb Madras</div><div class="price">&#8364; 13,50</div><div class="description" lang="nl">Lamsvlees bereid in een hete kerrie saus, bereid in een melange van sterke specerijen.</div><div class="description" lang="en">Lambmeat cooked in hot mixed curry spices.</div></div>
+                <div><div class="product">Lamb Mughalai</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Lamsvlees bereid met kokosnoot, amandelen, cashewnoten, rozijnen, fenegriek bladeren en Indiase kruiden. </div><div class="description" lang="en">Lambmeat cooked with coconut, almonds, cashewnuts, raisins, fenegreek leaves and Indian curry spices.</div></div>
+                <div><div class="product">Lamb Jal Frezi</div><div class="price">&#8364; 13,50</div><div class="description" lang="nl">Lamsvlees bereid met paprika en uien in een medium gekruide of hete kerrie saus.</div><div class="description" lang="en">Lambmeat prepared with paprika and onions in a medium spiced or hot curry sauce.</div></div>
+                <div><div class="product">Saag Lamb</div><div class="price">&#8364; 13,50</div><div class="description" lang="nl">Lamsvlees bereid in, op traditioneel Indiase wijze, medium gekruide spinazie.</div><div class="description" lang="en">Lambmeat cooked in, a traditional indian style, medium spiced spinach.</div></div>
+                <div><div class="product">Lamb Balti Curry</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Lamsvlees bereid in een Kashmiri Punjabi stijl met verse koriander, knoflook, tomaten en fenegriek bladeren.</div><div class="description" lang="en">Lamsvlees cooked in a Kashmiri Punjabi style with garden fresh coriander, garlic, tomatoes and fenugreek leaves.</div></div>
+                <div><div class="product">Lamb Punjabi Makhni</div><div class="price">&#8364;13,75</div><div class="description" lang="nl">Lamsvlees bereid met tomaten chutney, room, amandelen en mild gemengde kerrie kruiden. Dit gerecht is mild en licht zoet, de saus is vergelijkbaar met de ‘ Butter Chicken.‘</div><div class="description" lang="en">Lamb meat cooked with tomato chutney, cream, almonds 
+                    and mild mixed curry spices.This dish is mild and lightly sweet,
+                    the sauce is comparable to the ‘Butter Chicken.’</div></div>
+            </div>
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Tandoori Gerechten</span> / <span lang="en">Tandoori Dishes</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Ch. Tikka Tandoori</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Tandoori gemarineerde stukjes gefileerde kip uit de oven.</div><div class="description" lang="en">Tandoori marinated pieces of boneless chicken from the oven.</div></div>
+                <div><div class="product">Ch. Tikka Masala</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Tandoori gemarineerde stukjes kip uit de oven bereid met uien in een medium gekruide of hete kerrie saus.</div><div class="description" lang="en">Tandoori marinated pieces of chicken from the oven prepared with onions in a medium spiced or hot curry sauce.</div></div>
+                <div><div class="product">Butter Chicken</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Tandoori gemarineerde stukjes kip uit de oven bereid met tomaten chutney, room, amandelen, fenegriek en 
+                mild gemengde kerrie kruiden. Dit gerecht is mild en licht zoet en is een van onze specialiteiten.</div><div class="description" lang="en">Tandoori marinated pieces of chicken from the oven cooked with tomato chutney, cream, almonds, fenugreek leaves and 
+                Mild mixed curry spices. This dish is mild and lightly sweet
+                and it´s one of our specialities.</div></div>
+            </div>
+            <div class="imBookPage">
+                <div class="header">Biryani Specials</div>
+                <div class="header reduct"><span lang="nl">Gebakken rijst specialiteiten</span> / <span lang="en">Fried rice specialities</span></div>
+                <div class="subheader" lang="nl">Deze gerechten worden geserveerd met Chapatti (indiaas brood), Dal (linzen), Alu Mattar en Raeta.</div>
+                <div class="subheader" lang="en">All dishes are served with Chapatti, Dal (lentils), Alu Mattar and Raeta.</div>
+                <div><div class="product">Navrattan Biryani</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Gemende groenten, kokosnoot, amandelen, cashewnoten, rozijnen,kardemom en Indiase Basmati rijst gebakken 
+            in medium hete kruiden.</div><div class="description" lang="en">Mixed vegetables, coconut, almonds, cashew nuts, raisins, cardamom and Indian Basmati rice prepared in medium hot spices.</div></div>
+                <div><div class="product">Chicken Biryani</div><div class="price">&#8364; 13,00</div><div class="description" lang="nl">Kip, kokosnoot, amandelen, cashewnoten, rozijnen, kardemom en Indiase Basmati rijst gebakken in medium hete kruiden.</div><div class="description" lang="en">Chicken, paprika, coconut, almonds, cashew nuts, raisins, cardamom and Indian Basmati rice prepared in medium hot spices.</div></div>
+                <div><div class="product">Lamb Biryani</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Lamsvlees, kokosnoot, amandelen, cashewnoten, rozijnen, kardemom en 
+            Indiase Basmati rijst gebakken in medium hete kruiden.</div><div class="description" lang="en">Lamb meat, paprika, coconut, almonds, cashew nuts, raisins, cardamom and Indian Basmati rice prepared in medium hot spices.</div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Vis Specialiteiten</span> / <span lang="en">Fish Specialities</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Fish Kashmiri</div><div class="price">&#8364; 14,00</div><div class="description" lang="nl">Vis bereid in een hete kerrie saus, bestaande uit fenegriek bladeren, mint saus en hete Kashmiri masala.</div><div class="description" lang="en">Fish cooked in a hot curry sauce, which is made of fenugreek leaves, mint sauce and hot Kashmiri masala.</div></div>
+                <div><div class="product">Fish Jaipuri</div><div class="price">&#8364; 14,00</div><div class="description" lang="nl">Vis bereid in mango chutney en Indiase kruiden. 
+                Dit gerecht is licht gekruid en zoet.</div><div class="description" lang="en">Fish cooked in mango chutney and Indian spices. 
+                This dish is mildly spiced and sweet.</div></div>
+                <div><div class="product">Fish Bengali</div><div class="price">&#8364; 14,50</div><div class="description" lang="nl">Vis, yoghurt, uien, tomaten en mint in een medium gekruide kerrie saus.</div><div class="description" lang="en">Fish, yoghurt, onions, tomatoes and mint in a medium 
+                spiced curry sauce.</div></div>
+                <div><div class="product">Fish Jal Frezi</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Vis, uien, paprika en tomaten chutney, in een medium 
+                gekruide kerrie saus.</div><div class="description" lang="en">Fish, onions, paprika, tomato chutney in a medium 
+                spiced curry sauce.</div></div>
+                <div><div class="product">Fish Balti Curry</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Vis bereid in een Kashmiri Punjabi stijl met verse koriander, knoflook, tomaten en fenegriek bladeren.</div><div class="description" lang="en">Fish cooked in a Kashmiri Punjabi style with garden fresh coriander, garlic, tomatoes and fenugreek leaves.</div></div>
+                <div><div class="product">Fish Punjabi Makhni</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Vis bereid in tomaten chutney, room, amandelen en mild gemengde kerrie kruiden. Dit gerecht is mild en licht zoet.</div><div class="description" lang="en">Fish cooked in tomato chutney, cream, almonds and mild 
+                mixed curry spices. This dish is mild and lightly sweet.</div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Garnalen Specialiteiten</span> / <span lang="en">Prawn Specialities</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Mushroom Prawn</div><div class="price">&#8364; 17,75</div><div class="description" lang="nl">Garnalen en champignons bereid in een medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Prawns and mushrooms cooked in a medium hot curry sauce of Indian mixed curry spices.</div></div>
+                <div><div class="product">Prawn Shahi Korma</div><div class="price">&#8364; 18,50</div><div class="description" lang="nl">Garnalen bereid in een zoet romige saus, bestaande uit room, kokosnoot,amandelen, cashewnoten, rozijnen,
+                cardamon, ananas en Indiase kerrie kruiden.</div><div class="description" lang="en">Prawns  cooked in a sweet creamy sauce, which is made of cream, coconut,almonds, cashewnuts, raisins, cardamon, pineapple and Indian curry spices.</div></div>
+                <div><div class="product">Prawn Madras</div><div class="price">&#8364; 17,75</div><div class="description" lang="nl">Garnalen bereid in een hete kerrie saus, bereid in een melange van sterke specerijen.</div><div class="description" lang="en">Prawns cooked in hot mixed curry spices.</div></div>
+                <div><div class="product">Prawn Jal Frezi</div><div class="price">&#8364; 18,50</div><div class="description" lang="nl">Garnalen, uien, paprika en tomaten chutney, 
+                in een medium gekruide kerrie saus.</div><div class="description" lang="en">Prawns, onions, paprika, tomato chutney in a medium 
+                spiced curry sauce.</div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Vegetarische Gerechten</span> / <span lang="en">Vegetarian Dishes</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Mattar Paneer</div><div class="price">&#8364; 10,75</div><div class="description" lang="nl">Zelfgemaakte kaas en doperwten  bereid in een medium heet kerrie saus van Indiase gemengde kruiden en yoghurt.</div><div class="description" lang="en">Homemade cheese and green peas cooked in a medium hot curry sauce of Indian mixed curry spice and yoghurt.</div></div>
+                <div><div class="product">Saag Paneer</div><div class="price">&#8364; 10,75</div><div class="description" lang="nl">Zelfgemaakte kaas bereid in, op traditioneel Indiase wijze, medium gekruide spinazie.</div><div class="description" lang="en">Homemade cheese cooked in, a traditional Indian style, and medium spiced spinach.</div></div>
+                <div><div class="product">Alu Chana</div><div class="price">&#8364; 9,75</div><div class="description" lang="nl">Kikkererwten, aardappelen, tomaten chutney, 
+                amandelen en groene pepers bereid in een
+                medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Chick peas, potatoes, tomato chutney, almonds and green chillies cooked in  a medium hot curry sauce of 
+                Indian mixed curry spices.</div></div>
+                <div><div class="product"> Alu Gobhee</div><div class="price">&#8364; 9,75</div><div class="description" lang="nl">Bloemkool en aardappelen bereid in een medium 
+                heet kerrie saus van Indiase gemengde kruiden. </div><div class="description" lang="en">Cauliflower and potatoes cooked in a medium hot 
+                curry sauce of Indian mixed curry spices.</div></div>
+                <div><div class="product">Paneer Jalfrezi</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Zelfgemaakte kaas bereid met paprika, groene pepers en uien in een medium gekruide of hete kerrie saus.</div><div class="description" lang="en">Homemade cheese prepared with paprika, green chillies and onions in a medium spiced or hot curry sauce.</div></div>
+                <div><div class="product">Mushroom Paneer</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Champignons, zelfgemaakte kaas en doperwten bereid in
+                een medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Mushroom, homemade cheese and green peas cooked in a medium hot curry sauce of Indian mixed curry spices.</div></div>
+                <div><div class="product">Paneer Chana</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Zelfgemaakte kaas en Kikkererweten bereid in een medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Homemade chees and chickpeas cooked in a medium hot curry sauce of Indian mixed curry spices.</div></div>
+                <div><div class="product">Navrattan Mughalai</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Aardappelen, bloemkool, champignons, paprika en zelfgemaakte kaas bereid met kokosnoot, amandelen, cashewnoten, rozijnen, fenegriek bladeren en Indiase kruiden.</div><div class="description" lang="en">Potatoes, cauliflower, mushrooms, homemade cheese cooked with coconut, almonds, cashewnuts, raisins, fenegreek leaves and Indian curry spices.</div></div>
+                <div><div class="product">Navrattan Korma</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Aardappelen, bloemkool, champignons en zelfgemaakte kaas bereid in een mild en zoet romige saus, bestaande uit room, kokosnoot, amandelen, cashewnoten, rozijnen, cardamon, ananas en Indiase Kerrie kruiden.</div><div class="description" lang="en">Potatoes, cauliflower, mushrooms, homemade cheese cooked in a mild and sweet creamy sauce, which is made  of cream, coconut, almonds, cashew nuts, raisins, cardamom, pineapple and Indian curry spices.</div></div>
+                <div><div class="product">Navrattan Madras</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Aardappelen, bloemkool, champignons, paprika en zelfgemaakte kaas in een hete kerrie saus,  bereid in een pittige curry.</div><div class="description" lang="en">Potatoes, cauliflower, mushroom, paprika and homemade cheese cooked in hot mixed curry spices.</div></div>
+                <div><div class="product">Shahi Paneer</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Zelf gemaakte kaas bereid met tomaten chutney, room, amandelen, fenegriek en mild gemengde kerrie kruiden.</div><div class="description" lang="en">Homemade cheese cooked with tomato chutney, cream,
+                    almonds, fenugreek leaves and mild  mixed curry spices.</div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Bijgerechten</span> / <span lang="en">Side Dishes</span></div>
+                <div><div class="product">Punjabi Raeta</div><div class="price">&#8364; 2,50</div><div class="description" lang="nl">Gekruide yoghurt met stukjes komkommer en tomaat.</div><div class="description" lang="en">Spicy yoghurt with pieces of cucumber and tomato.</div></div>
+                <div><div class="product">Mixed salad</div><div class="price">&#8364; 2,50</div><div class="description" lang="nl">Verse sla, tomaat, komkommer.</div><div class="description" lang="en">Fresh lettuce, tomatoes, cucumber.</div></div>
+                <div><div class="product">Saag (Palak)</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Gekruide spinazie.</div><div class="description" lang="en">Spicy spinach.</div></div>
+                <div><div class="product">Jeera Alu</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Gekruide aardappelen.</div><div class="description" lang="en">Spicy potatoes.</div></div>
+                <div><div class="product">Alu Palak</div><div class="price">&#8364; 5,00</div><div class="description" lang="nl">Kleine portie gekruide spinazie met aardappelen.</div><div class="description" lang="en">Small portion of spicy spinach and potatoes.</div></div>
+                <div><div class="product">Mushroom Alu</div><div class="price">&#8364; 5,00</div><div class="description" lang="nl">Kleine portie champignons  met aardappelen.</div><div class="description" lang="en">Small portion of green mushroom  and potatoes.</div></div>
+                <div><div class="product">Mushroom Mattar</div><div class="price">&#8364; 5,00</div><div class="description" lang="nl">Kleine portie doperwten met champignons.</div><div class="description" lang="en">Small portion of green peas and mushroom.</div></div>
+                <div><div class="product">Chapati</div><div class="price">&#8364; 1,25</div><div class="description" lang="nl">Dun Indiaas brood.</div><div class="description" lang="en">Thin Indian bread.</div></div>
+            </div>       
+            <!-- Menu -->
+            <div class="imBookPage">
+                <div class="header">Voorgerechten</div>
+                <div><div class="product">Papadam</div><div class="price">&#8364; 1,25</div><div class="description" lang="nl">Gekruide krokante pannenkoek. 2 stuks.</div><div class="description" lang="en">Spicy crispy pancake. 2 pieces.</div></div>
+                <div><div class="product">Murg Shorba (Chicken Soup)</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Op Indiase wijze gekruide kippensoep.</div><div class="description" lang="en">Indian style, spicy chicken soup.</div></div>
+                <div><div class="product">Mulligatawny Shorba</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Op Indiase wijze gekruide kerriesoep met linzen en een schijfje citroen.</div><div class="description" lang="en">Indian style, spicy curry soup with lentils and a slice of lemon.</div></div>
+                <div><div class="product">Palak-Dahi Shorba</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Gekruide spinazie soep met een scheutje yoghurt.</div><div class="description" lang="en">Spicy spinach soup with a little bit of yoghurt.</div></div>
+                <div><div class="product">Onion Bhaji (Pakora)</div><div class="price">&#8364; 5,25</div><div class="description" lang="nl">Julienne gesneden uien  gemengd met medium hete Indiase kruiden, Kashmiri massala en kikkererwten meel, gefrituurd en geserveerd met 2 sausjes.</div><div class="description" lang="en">Julienne cut onions mixed with medium hot Indian spices, Kashmiri masala and gram flour, deep-fried and served with 2 sauces.</div></div>
+                <div><div class="product">Vegetable Samosa</div><div class="price">&#8364; 5,25</div><div class="description" lang="nl">Groente gevuld in bladerdeeg, gefrituurd, 2 stuks en geserveerd met 2 sausjes.</div><div class="description" lang="en">Vegetables filled in a pastry envelope, deep-fried, 2 pieces served with 2 sauces.</div></div>
+                <div><div class="product">Chicken Samosa</div><div class="price">&#8364; 5,50</div><div class="description" lang="nl">Gekruid kipfilet (gehakt) in bladerdeeg, gefrituurd, 2 stuks en geserveerd met 2 sausjes.</div><div class="description" lang="en">Spicy chicken (minced) filled in a pastry envelope, deep-fried, 2 pieces served with 2 sauces.</div></div>
+                <div><div class="product">Reshami Kebab</div><div class="price">&#8364; 5,75</div><div class="description" lang="nl">Gekruide kebabs van kip. Een typisch mughalai gerecht geserveerd zoals in Oud-Delhi in de 15de eeuw.</div><div class="description" lang="en">Spicy kebabs made of chicken. A typical mughalai dish as served in old delhi since the 15th century.</div></div>
+                <div><div class="product">Mint Tikka</div><div class="price">&#8364; 5,75</div><div class="description" lang="nl">In Tandoori kruiden  en mint gemarineerde stukjes kip uit de oven,geserveerd met 2 sausjes.</div><div class="description" lang="en">In Tandoori spices and mint marinated pieces of chicken from the oven, served with 2 sauces.</div></div>
+                <div><div class="product">Chicken Chaat</div><div class="price">&#8364; 5,25</div><div class="description" lang="nl">Overheerlijke licht gekruide salade met warme stukjes kip en een dressing van honing en mosterd.</div><div class="description" lang="en">A delicious, lightly spicy, salad prepared with hot chicken and a dressing of honey and mustard.</div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Kip Gerechten</span> / <span lang="en">Chicken Dishes</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Chicken Rogan Josh</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Kipfilet bereid in een melange van Indiase kruiden, een scheutje yoghurt en veel tomaten. Kortom een typisch Indiase curry. Dit gerecht is medium heet 
+                    en kan indien u wenst pittig bereid worden.</div><div class="description" lang="en">
+                        Boneless chicken prepared with Indian spices, a little bit of yoghurt and lots of tomatoes. This is a typical Indian curry.</div></div>
+                <div><div class="product">Chicken Shahi Korma</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Mild gekruide kip bereid in een zoet romige saus, bestaande uit room, kokosnoot, amandelen, cashewnoten, rozijnen,
+                    cardamon, ananas en Indiase kerrie kruiden.</div><div class="description" lang="en">Mild spiced chicken cooked in a sweet creamy sauce, which is made of cream, coconut, almonds, cashewnuts, raisins,
+                        cardamon, pineapple and Indian curry spices.	</div></div>
+                <div><div class="product">Chicken Jaipuri</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Kipfilet bereid in mango chutney en Indiase kruiden. 
+                    Dit gerecht is licht gekruid en zoet.</div><div class="description" lang="en">Chicken cooked in mango chutney and Indian spices. 
+                        This dish is mildly spiced and sweet.</div></div>
+                <div><div class="product">Chicken Kashmiri</div><div class="price">&#8364; 14,50</div><div class="description" lang="nl">Kip bereid in een hete kerrie saus, bestaande uit fenegriek bladeren, mint saus en hete Kashmiri masala.</div><div class="description" lang="en">Chicken cooked in a hot curry sauce, which is made of
+                    fenugreek leaves, mint sauce and hot Kashmiri masala.</div></div>
+                <div><div class="product">Chicken Madras</div><div class="price">&#8364; 14,50</div><div class="description" lang="nl">Kip bereid in een hete kerrie saus, bereid in een 
+                    melange van sterke specerijen.</div><div class="description" lang="en">Chicken cooked in hot mixed curry spices.</div></div>
+                <div><div class="product">Chicken Mughalai</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Kip bereid met kokosnoot, amandelen, cashewnoten, rozijnen, fenegriek bladeren en Indiase kruiden. </div><div class="description" lang="en">Chicken cooked with coconut, almonds, cashewnuts, raisins, fenegreek leaves and Indian curry spices.</div></div>
+                <div><div class="product">Chicken Jal Frezi</div><div class="price">&#8364; 14,50</div><div class="description" lang="nl">Kip bereid met paprika en uien in een medium gekruide 
+                    of hete kerrie saus.</div><div class="description" lang="en">Chicken prepared with paprika and onions in a medium spiced or hot curry sauce.</div></div>
+                <div><div class="product">Saag Chicken</div><div class="price">&#8364; 14,50</div><div class="description" lang="nl">Kip bereid in, op traditioneel Indiase wijze, medium gekruide spinazie.</div><div class="description" lang="en">Chicken cooked in, a traditional indian style, medium spiced spinach.</div></div>
+                <div><div class="product">Chicken Balti Curry</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Kip bereid in een Kashmiri Punjabi stijl met verse koriander, knoflook, tomaten en fenegriek bladeren.</div><div class="description" lang="en">Chicken cooked in a Kashmiri Punjabi style with garden fresh coriander, garlic, tomatoes and fenugreek leaves.</div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>
+            <div class="imBookPage">
+                <div class="header">Lamsvlees Gerechten / Lambmeat Dishes</div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Lamb Rogan Josh</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Lamsvlees bereid in een melange van Indiase kruiden, een scheutje yoghurt en veel tomaten. Kortom een typisch Indiase curry. Dit gerecht is medium heet en kan indien u wenst pittig bereid worden.</div><div class="description" lang="en">Boneless lambmeat prepared with Indian spices, a little bit of yoghurt and lots of tomatoes.This is a typical Indian curry.</div></div>
+                <div><div class="product">Lamb Shahi Korma</div><div class="price">&#8364; 15,75</div><div class="description" lang="nl">Mild gekruide lamsvlees bereid in een zoet romige saus, bestaande uit room, kokosnoot,amandelen, cashewnoten, rozijnen, cardamon, ananas en Indiase kerrie kruiden.</div><div class="description" lang="en">Mild spiced lambmeat cooked in a sweet creamy sauce, 
+                    which is made of cream, coconut,almonds, cashewnuts, raisins,
+                    cardamon, pineapple and Indian curry spices.	</div></div>
+                <div><div class="product">Lamb Jaipuri</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Lamsvlees bereid in mango chutney en Indiase kruiden.
+                    Dit gerecht is licht gekruid en zoet.</div><div class="description" lang="en">Lambmeat cooked in mango chutney and Indian spices. 
+                        This dish is mildly spiced and sweet.</div></div>
+                <div><div class="product">Lamb Kashmiri</div><div class="price">&#8364; 15,50</div><div class="description" lang="nl">Lamsvlees bereid in een hete kerrie saus, bestaande uit fenegriek bladeren, mint saus en hete Kashmiri masala.</div><div class="description" lang="en">Lambmeat cooked in a hot curry sauce, which is made of
+                    fenugreek leaves, mint sauce and hot Kashmiri masala.</div></div>
+                <div><div class="product">Lamb Madras</div><div class="price">&#8364; 15,50</div><div class="description" lang="nl">Lamsvlees bereid in een hete kerrie saus, bereid in een melange van sterke specerijen.</div><div class="description" lang="en">Lambmeat cooked in hot mixed curry spices.</div></div>
+                <div><div class="product">Lamb Mughalai</div><div class="price">&#8364; 15,75</div><div class="description" lang="nl">Lamsvlees bereid met kokosnoot, amandelen, cashewnoten, rozijnen, fenegriek bladeren en Indiase kruiden. </div><div class="description" lang="en">Lambmeat cooked with coconut, almonds, cashewnuts, raisins, fenegreek leaves and Indian curry spices.</div></div>
+                <div><div class="product">Lamb Jal Frezi</div><div class="price">&#8364; 15,50</div><div class="description" lang="nl">Lamsvlees bereid met paprika en uien in een medium gekruide of hete kerrie saus.</div><div class="description" lang="en">Lambmeat prepared with paprika and onions in a medium spiced or hot curry sauce.</div></div>
+                <div><div class="product">Saag Lamb</div><div class="price">&#8364; 15,50</div><div class="description" lang="nl">Lamsvlees bereid in, op traditioneel Indiase wijze, medium gekruide spinazie.</div><div class="description" lang="en">Lambmeat cooked in, a traditional indian style, medium spiced spinach.</div></div>
+                <div><div class="product">Lamb Balti Curry</div><div class="price">&#8364; 15,75</div><div class="description" lang="nl">Lamsvlees bereid in een Kashmiri Punjabi stijl met verse koriander, knoflook, tomaten en fenegriek bladeren.</div><div class="description" lang="en">Lamsvlees cooked in a Kashmiri Punjabi style with garden fresh coriander, garlic, tomatoes and fenugreek leaves.</div></div>
+                <div><div class="product">Lamb Punjabi Makhni</div><div class="price">&#8364;15,75</div><div class="description" lang="nl">Lamsvlees bereid met tomaten chutney, room, amandelen en mild gemengde kerrie kruiden. Dit gerecht is mild en licht zoet, de saus is vergelijkbaar met de ‘ Butter Chicken.‘</div><div class="description" lang="en">Lamb meat cooked with tomato chutney, cream, almonds 
+                    and mild mixed curry spices.This dish is mild and lightly sweet,
+                    the sauce is comparable to the ‘Butter Chicken.’</div></div>
+            </div>
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Tandoori Gerechten</span> / <span lang="en">Tandoori Dishes</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Ch. Tikka Tandoori</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Tandoori gemarineerde stukjes gefileerde kip uit de oven.</div><div class="description" lang="en">Tandoori marinated pieces of boneless chicken from the oven.</div></div>
+                <div><div class="product">Ch. Tikka Masala</div><div class="price">&#8364; 15,75</div><div class="description" lang="nl">Tandoori gemarineerde stukjes kip uit de oven bereid met uien in een medium gekruide of hete kerrie saus.</div><div class="description" lang="en">Tandoori marinated pieces of chicken from the oven prepared with onions in a medium spiced or hot curry sauce.</div></div>
+                <div><div class="product">Butter Chicken</div><div class="price">&#8364; 15,75</div><div class="description" lang="nl">Tandoori gemarineerde stukjes kip uit de oven bereid met tomaten chutney, room, amandelen, fenegriek en 
+                    mild gemengde kerrie kruiden. Dit gerecht is mild en licht zoet en is een van onze specialiteiten.</div><div class="description" lang="en">Tandoori marinated pieces of chicken from the oven cooked with tomato chutney, cream, almonds, fenugreek leaves and 
+                        Mild mixed curry spices. This dish is mild and lightly sweet
+                        and it´s one of our specialities.</div></div>
+            </div>
+            <div class="imBookPage">
+                <div class="header">Biryani Specials</div>
+                <div class="header reduct"><span lang="nl">Gebakken rijst specialiteiten</span> / <span lang="en">Fried rice specialities</span></div>
+                <div class="subheader" lang="nl">Deze gerechten worden geserveerd met Chapatti (indiaas brood), Dal (linzen), Alu Mattar en Raeta.</div>
+                <div class="subheader" lang="en">All dishes are served with Chapatti, Dal (lentils), Alu Mattar and Raeta.</div>
+                <div><div class="product">Navrattan Biryani</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Gemende groenten, kokosnoot, amandelen, cashewnoten, rozijnen,kardemom en Indiase Basmati rijst gebakken 
+                    in medium hete kruiden.</div><div class="description" lang="en">Mixed vegetables, coconut, almonds, cashew nuts, raisins, cardamom and Indian Basmati rice prepared in medium hot spices.</div></div>
+                <div><div class="product">Chicken Biryani</div><div class="price">&#8364; 14,25</div><div class="description" lang="nl">Kip, kokosnoot, amandelen, cashewnoten, rozijnen, kardemom en Indiase Basmati rijst gebakken in medium hete kruiden.</div><div class="description" lang="en">Chicken, paprika, coconut, almonds, cashew nuts, raisins, cardamom and Indian Basmati rice prepared in medium hot spices.</div></div>
+                <div><div class="product">Lamb Biryani</div><div class="price">&#8364; 15,25</div><div class="description" lang="nl">Lamsvlees, kokosnoot, amandelen, cashewnoten, rozijnen, kardemom en 
+                    Indiase Basmati rijst gebakken in medium hete kruiden.</div><div class="description" lang="en">Lamb meat, paprika, coconut, almonds, cashew nuts, raisins, cardamom and Indian Basmati rice prepared in medium hot spices.</div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Vis Specialiteiten</span> / <span lang="en">Fish Specialities</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Fish Kashmiri</div><div class="price">&#8364; 15,75</div><div class="description" lang="nl">Vis bereid in een hete kerrie saus, bestaande uit fenegriek bladeren, mint saus en hete Kashmiri masala.</div><div class="description" lang="en">Fish cooked in a hot curry sauce, which is made of fenugreek leaves, mint sauce and hot Kashmiri masala.</div></div>
+                <div><div class="product">Fish Jaipuri</div><div class="price">&#8364; 15,75</div><div class="description" lang="nl">Vis bereid in mango chutney en Indiase kruiden. 
+                    Dit gerecht is licht gekruid en zoet.</div><div class="description" lang="en">Fish cooked in mango chutney and Indian spices. 
+                        This dish is mildly spiced and sweet.</div></div>
+                <div><div class="product">Fish Bengali</div><div class="price">&#8364; 16,50</div><div class="description" lang="nl">Vis, yoghurt, uien, tomaten en mint in een medium gekruide kerrie saus.</div><div class="description" lang="en">Fish, yoghurt, onions, tomatoes and mint in a medium 
+                    spiced curry sauce.</div></div>
+                <div><div class="product">Fish Jal Frezi</div><div class="price">&#8364; 16,50</div><div class="description" lang="nl">Vis, uien, paprika en tomaten chutney, in een medium 
+                    gekruide kerrie saus.</div><div class="description" lang="en">Fish, onions, paprika, tomato chutney in a medium 
+                        spiced curry sauce.</div></div>
+                <div><div class="product">Fish Balti Curry</div><div class="price">&#8364; 16,75</div><div class="description" lang="nl">Vis bereid in een Kashmiri Punjabi stijl met verse koriander, knoflook, tomaten en fenegriek bladeren.</div><div class="description" lang="en">Fish cooked in a Kashmiri Punjabi style with garden fresh coriander, garlic, tomatoes and fenugreek leaves.</div></div>
+                <div><div class="product">Fish Punjabi Makhni</div><div class="price">&#8364; 16,75</div><div class="description" lang="nl">Vis bereid in tomaten chutney, room, amandelen en mild gemengde kerrie kruiden. Dit gerecht is mild en licht zoet.</div><div class="description" lang="en">Fish cooked in tomato chutney, cream, almonds and mild 
+                    mixed curry spices. This dish is mild and lightly sweet.</div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Garnalen Specialiteiten</span> / <span lang="en">Prawn Specialities</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Mushroom Prawn</div><div class="price">&#8364; 17,75</div><div class="description" lang="nl">Garnalen en champignons bereid in een medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Prawns and mushrooms cooked in a medium hot curry sauce of Indian mixed curry spices.</div></div>
+                <div><div class="product">Prawn Shahi Korma</div><div class="price">&#8364; 18,75</div><div class="description" lang="nl">Garnalen bereid in een zoet romige saus, bestaande uit room, kokosnoot,amandelen, cashewnoten, rozijnen,
+                    cardamon, ananas en Indiase kerrie kruiden.</div><div class="description" lang="en">Prawns  cooked in a sweet creamy sauce, which is made of cream, coconut,almonds, cashewnuts, raisins, cardamon, pineapple and Indian curry spices.</div></div>
+                <div><div class="product">Prawn Madras</div><div class="price">&#8364; 18,50</div><div class="description" lang="nl">Garnalen bereid in een hete kerrie saus, bereid in een melange van sterke specerijen.</div><div class="description" lang="en">Prawns cooked in hot mixed curry spices.</div></div>
+                <div><div class="product">Prawn Jal Frezi</div><div class="price">&#8364; 18,50</div><div class="description" lang="nl">Garnalen, uien, paprika en tomaten chutney, 
+                    in een medium gekruide kerrie saus.</div><div class="description" lang="en">Prawns, onions, paprika, tomato chutney in a medium 
+                        spiced curry sauce.</div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Vegetarische Gerechten</span> / <span lang="en">Vegetarian Dishes</span></div>
+                <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
+                <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
+                <div><div class="product">Mattar Paneer</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Zelfgemaakte kaas en doperwten  bereid in een medium heet kerrie saus van Indiase gemengde kruiden en yoghurt.</div><div class="description" lang="en">Homemade cheese and green peas cooked in a medium hot curry sauce of Indian mixed curry spice and yoghurt.</div></div>
+                <div><div class="product">Saag Paneer</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl">Zelfgemaakte kaas bereid in, op traditioneel Indiase wijze, medium gekruide spinazie.</div><div class="description" lang="en">Homemade cheese cooked in, a traditional Indian style, and medium spiced spinach.</div></div>
+                <div><div class="product">Alu Chana</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl">Kikkererwten, aardappelen, tomaten chutney, 
+                    amandelen en groene pepers bereid in een
+                    medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Chick peas, potatoes, tomato chutney, almonds and green chillies cooked in  a medium hot curry sauce of 
+                        Indian mixed curry spices.</div></div>
+                <div><div class="product"> Alu Gobhee</div><div class="price">&#8364; 12,00</div><div class="description" lang="nl">Bloemkool en aardappelen bereid in een medium 
+                    heet kerrie saus van Indiase gemengde kruiden. </div><div class="description" lang="en">Cauliflower and potatoes cooked in a medium hot 
+                        curry sauce of Indian mixed curry spices.</div></div>
+                <div><div class="product">Paneer Jalfrezi</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Zelfgemaakte kaas bereid met paprika, groene pepers en uien in een medium gekruide of hete kerrie saus.</div><div class="description" lang="en">Homemade cheese prepared with paprika, green chillies and onions in a medium spiced or hot curry sauce.</div></div>
+                <div><div class="product">Mushroom Paneer</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Champignons, zelfgemaakte kaas en doperwten bereid in
+                    een medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Mushroom, homemade cheese and green peas cooked in a medium hot curry sauce of Indian mixed curry spices.</div></div>
+                <div><div class="product">Paneer Chana</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Zelfgemaakte kaas en Kikkererweten bereid in een medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Homemade chees and chickpeas cooked in a medium hot curry sauce of Indian mixed curry spices.</div></div>
+                <div><div class="product">Navrattan Mughalai</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Aardappelen, bloemkool, champignons, paprika en zelfgemaakte kaas bereid met kokosnoot, amandelen, cashewnoten, rozijnen, fenegriek bladeren en Indiase kruiden.</div><div class="description" lang="en">Potatoes, cauliflower, mushrooms, homemade cheese cooked with coconut, almonds, cashewnuts, raisins, fenegreek leaves and Indian curry spices.</div></div>
+                <div><div class="product">Navrattan Korma</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Aardappelen, bloemkool, champignons en zelfgemaakte kaas bereid in een mild en zoet romige saus, bestaande uit room, kokosnoot, amandelen, cashewnoten, rozijnen, cardamon, ananas en Indiase Kerrie kruiden.</div><div class="description" lang="en">Potatoes, cauliflower, mushrooms, homemade cheese cooked in a mild and sweet creamy sauce, which is made  of cream, coconut, almonds, cashew nuts, raisins, cardamom, pineapple and Indian curry spices.</div></div>
+                <div><div class="product">Navrattan Madras</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl">Aardappelen, bloemkool, champignons, paprika en zelfgemaakte kaas in een hete kerrie saus,  bereid in een pittige curry.</div><div class="description" lang="en">Potatoes, cauliflower, mushroom, paprika and homemade cheese cooked in hot mixed curry spices.</div></div>
+                <div><div class="product">Shahi Paneer</div><div class="price">&#8364; 12,75</div><div class="description" lang="nl">Zelf gemaakte kaas bereid met tomaten chutney, room, amandelen, fenegriek en mild gemengde kerrie kruiden.</div><div class="description" lang="en">Homemade cheese cooked with tomato chutney, cream,
+                    almonds, fenugreek leaves and mild  mixed curry spices.</div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Bijgerechten</span> / <span lang="en">Side Dishes</span></div>
+                <div><div class="product">Punjabi Raeta</div><div class="price">&#8364; 2,75</div><div class="description" lang="nl">Gekruide yoghurt met stukjes komkommer en tomaat.</div><div class="description" lang="en">Spicy yoghurt with pieces of cucumber and tomato.</div></div>
+                <div><div class="product">Mixed salad</div><div class="price">&#8364; 3,00</div><div class="description" lang="nl">Verse sla, tomaat, komkommer.</div><div class="description" lang="en">Fresh lettuce, tomatoes, cucumber.</div></div>
+                <div><div class="product">Saag (Palak)</div><div class="price">&#8364; 4,75</div><div class="description" lang="nl">Gekruide spinazie.</div><div class="description" lang="en">Spicy spinach.</div></div>
+                <div><div class="product">Jeera Alu</div><div class="price">&#8364; 4,75</div><div class="description" lang="nl">Gekruide aardappelen.</div><div class="description" lang="en">Spicy potatoes.</div></div>
+                <div><div class="product">Alu Palak</div><div class="price">&#8364; 5,00</div><div class="description" lang="nl">Kleine portie gekruide spinazie met aardappelen.</div><div class="description" lang="en">Small portion of spicy spinach and potatoes.</div></div>
+                <div><div class="product">Mushroom Alu</div><div class="price">&#8364; 5,00</div><div class="description" lang="nl">Kleine portie champignons  met aardappelen.</div><div class="description" lang="en">Small portion of green mushroom  and potatoes.</div></div>
+                <div><div class="product">Mushroom Mattar</div><div class="price">&#8364; 5,00</div><div class="description" lang="nl">Kleine portie doperwten met champignons.</div><div class="description" lang="en">Small portion of green peas and mushroom.</div></div>
+                <div><div class="product">Chapati</div><div class="price">&#8364; 1,50</div><div class="description" lang="nl">Dun Indiaas brood.</div><div class="description" lang="en">Thin Indian bread.</div></div>
+            </div>
+            <!-- Catering -->
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Catering</span> / <span lang="en"></span></div>
+                <div class="subheader" lang="nl"><p>Wij verzorgen catering voor bedrijven en particulieren vanaf 25 personen.
+                    Tevens verzorgen wij Surinaams/Hindoestaanse catering (vanaf 40 personen). Sim's Roti Shop - Willemsstraat 81 te Amsterdam.
+                </p><p>
+                    Voor meer informatie kunt u contact opnemen met Kamal tel.: 0640882454 of 020-3306555 (na 15.00 uur van woensdag t/m maandag)</p></div>
+                <div class="subheader" lang="en"></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>          
+            <div class="imBookPage">
+                <div class="header"><span lang="nl"></span> / <span lang="en"></span></div>
+                <div class="subheader" lang="nl"></div>
+                <div class="subheader" lang="en"></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+                <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+		$('#nextpage').click(function() {
+			$('#rightmenu').animate({
+			     opacity: 0.25,
+			     left: '+=50',
+			     width: 0,
+			     fontSize: 0
+			 }, 5000, function() {
+			     // Animation complete.
+			 });
+		});
+		var myBook;
+		$(document).ready( function() {
+			myBook = $("#myBook").imBookFlip({
+					page_class: 'imBookPage',
+					goToPageSpeed: 300,
+					autoFlipSpeed: 0
+			});
+			myBook.create();
+			$('.frontpage').click(function() {
+					$('.frontpage').hide();
+			});
+		});
+		$('div[lang="nl"]').addClass("emph");
+        </script>
+        <div class="vcard" style="display:none;visibility:hidden;">
+            <p class="fn">Balraj</p>
+            <p class="adr">
+                <span class="street-address">Haarlemmerdijk 28</span>
+                <span class="postal-code">1013 JD</span>
+                <span class="locality">Amsterdam</span>
+            </p>
+            <span class="tel">+31206251428</span>
+        </div>
+    </body>
+</html>
