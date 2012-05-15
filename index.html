@@ -72,6 +72,7 @@
                 margin-right: 10px;
             }
             .product {
+                margin-top: 5px;
                 color: #c00000;
                 float: left;
             }
@@ -91,6 +92,12 @@
                 font-style:normal;
                 font-weight: bold;
             }
+            .language {
+                position : relative;
+                right: -390px;
+                top: -25px;
+                z-index: 500;
+            }
         </style>
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.imBookFlip-1.0.js"></script>
@@ -98,13 +105,20 @@
     <body>
         <div class="logo central"><img width="171" height="73"
                 src="Balraj%20-%20Indian%20Restaurant-logo.jpg"
-                alt="BalRaj - Indian Restaurant - Logo" /></div>
-        <div class="frontpage">Frontpage</div>
+                alt="BalRaj - Indian Restaurant - Logo" />
+            <div class="language">
+                <a href="#" onclick="language('nl');return false;"><img width="18" height="10" src="nl.jpg" alt="Nederlands - image by Timi1 - http://www.flickr.com/photos/timi/"/></a>
+                
+                <a href="#" onclick="language('en');return false;"><img width="18" height="10" src="en.jpg" alt="English - image by Timi1 - http://www.flickr.com/photos/timi/"/></a>
+            </div>
+        </div>
+        <div class="frontpage"><div class="header"><span lang="nl">Voorpagina</span><span lang="en">Frontpage</span></div></div>
         <div class="central down" id="myBook" style="display:none;">
-            <div class="imBookPage">Frontpage</div>
+            <div class="imBookPage"><div class="header"><span lang="nl">Voorpagina</span><span lang="en">Frontpage</span></div></div>
             <!-- Afhaal -->
+            <div class="imBookPage"><div class="header"><span lang="nl">Afhaal Menu</span><span lang="en">Takeaway Menu</span></div></div>
             <div class="imBookPage">
-                <div class="header">Voorgerechten</div>
+                <div class="header"><span lang="nl">Voorgerechten</span><span lang="en">Starters</span></div>
                 <div><div class="product">Papadam</div><div class="price">&#8364; 1,00</div><div class="description" lang="nl">Gekruide krokante pannenkoek. 2 stuks.</div><div class="description" lang="en">Spicy crispy pancake. 2 pieces.</div></div>
                 <div><div class="product">Murg Shorba (Chicken Soup)</div><div class="price">&#8364; 3,50</div><div class="description" lang="nl">Op Indiase wijze gekruide kippensoep.</div><div class="description" lang="en">Indian style, spicy chicken soup.</div></div>
                 <div><div class="product">Mulligatawny Shorba</div><div class="price">&#8364; 3,50</div><div class="description" lang="nl">Op Indiase wijze gekruide kerriesoep met linzen en een schijfje citroen.</div><div class="description" lang="en">Indian style, spicy curry soup with lentils and a slice of lemon.</div></div>
@@ -118,7 +132,7 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Kip Gerechten</span> / <span lang="en">Chicken Dishes</span></div>
+                <div class="header"><span lang="nl">Kip Gerechten</span><span lang="en">Chicken Dishes</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Chicken Rogan Josh</div><div class="price">&#8364; 12,50</div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
@@ -143,7 +157,7 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>
             <div class="imBookPage">
-                <div class="header">Lamsvlees Gerechten / Lambmeat Dishes</div>
+                <div class="header"><span lang="nl">Lamsvlees Gerechten</span><span lang="en">Lambmeat Dishes</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Lamb Rogan Josh</div><div class="price">&#8364; 13,50</div><div class="description" lang="nl">Lamsvlees bereid in een melange van Indiase kruiden, een scheutje yoghurt en veel tomaten. Kortom een typisch Indiase curry. Dit gerecht is medium heet en kan indien u wenst pittig bereid worden.</div><div class="description" lang="en">Boneless lambmeat prepared with Indian spices, a little bit of yoghurt and lots of tomatoes.This is a typical Indian curry.</div></div>
@@ -165,7 +179,7 @@
                     the sauce is comparable to the ‘Butter Chicken.’</div></div>
             </div>
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Tandoori Gerechten</span> / <span lang="en">Tandoori Dishes</span></div>
+                <div class="header"><span lang="nl">Tandoori Gerechten</span><span lang="en">Tandoori Dishes</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Ch. Tikka Tandoori</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Tandoori gemarineerde stukjes gefileerde kip uit de oven.</div><div class="description" lang="en">Tandoori marinated pieces of boneless chicken from the oven.</div></div>
@@ -177,7 +191,7 @@
             </div>
             <div class="imBookPage">
                 <div class="header">Biryani Specials</div>
-                <div class="header reduct"><span lang="nl">Gebakken rijst specialiteiten</span> / <span lang="en">Fried rice specialities</span></div>
+                <div class="header reduct"><span lang="nl">Gebakken rijst specialiteiten</span><span lang="en">Fried rice specialities</span></div>
                 <div class="subheader" lang="nl">Deze gerechten worden geserveerd met Chapatti (indiaas brood), Dal (linzen), Alu Mattar en Raeta.</div>
                 <div class="subheader" lang="en">All dishes are served with Chapatti, Dal (lentils), Alu Mattar and Raeta.</div>
                 <div><div class="product">Navrattan Biryani</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Gemende groenten, kokosnoot, amandelen, cashewnoten, rozijnen,kardemom en Indiase Basmati rijst gebakken 
@@ -187,7 +201,7 @@
             Indiase Basmati rijst gebakken in medium hete kruiden.</div><div class="description" lang="en">Lamb meat, paprika, coconut, almonds, cashew nuts, raisins, cardamom and Indian Basmati rice prepared in medium hot spices.</div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Vis Specialiteiten</span> / <span lang="en">Fish Specialities</span></div>
+                <div class="header"><span lang="nl">Vis Specialiteiten</span><span lang="en">Fish Specialities</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Fish Kashmiri</div><div class="price">&#8364; 14,00</div><div class="description" lang="nl">Vis bereid in een hete kerrie saus, bestaande uit fenegriek bladeren, mint saus en hete Kashmiri masala.</div><div class="description" lang="en">Fish cooked in a hot curry sauce, which is made of fenugreek leaves, mint sauce and hot Kashmiri masala.</div></div>
@@ -205,7 +219,7 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Garnalen Specialiteiten</span> / <span lang="en">Prawn Specialities</span></div>
+                <div class="header"><span lang="nl">Garnalen Specialiteiten</span><span lang="en">Prawn Specialities</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Mushroom Prawn</div><div class="price">&#8364; 17,75</div><div class="description" lang="nl">Garnalen en champignons bereid in een medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Prawns and mushrooms cooked in a medium hot curry sauce of Indian mixed curry spices.</div></div>
@@ -218,7 +232,7 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Vegetarische Gerechten</span> / <span lang="en">Vegetarian Dishes</span></div>
+                <div class="header"><span lang="nl">Vegetarische Gerechten</span><span lang="en">Vegetarian Dishes</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Mattar Paneer</div><div class="price">&#8364; 10,75</div><div class="description" lang="nl">Zelfgemaakte kaas en doperwten  bereid in een medium heet kerrie saus van Indiase gemengde kruiden en yoghurt.</div><div class="description" lang="en">Homemade cheese and green peas cooked in a medium hot curry sauce of Indian mixed curry spice and yoghurt.</div></div>
@@ -241,7 +255,7 @@
                     almonds, fenugreek leaves and mild  mixed curry spices.</div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Bijgerechten</span> / <span lang="en">Side Dishes</span></div>
+                <div class="header"><span lang="nl">Bijgerechten</span><span lang="en">Side Dishes</span></div>
                 <div><div class="product">Punjabi Raeta</div><div class="price">&#8364; 2,50</div><div class="description" lang="nl">Gekruide yoghurt met stukjes komkommer en tomaat.</div><div class="description" lang="en">Spicy yoghurt with pieces of cucumber and tomato.</div></div>
                 <div><div class="product">Mixed salad</div><div class="price">&#8364; 2,50</div><div class="description" lang="nl">Verse sla, tomaat, komkommer.</div><div class="description" lang="en">Fresh lettuce, tomatoes, cucumber.</div></div>
                 <div><div class="product">Saag (Palak)</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Gekruide spinazie.</div><div class="description" lang="en">Spicy spinach.</div></div>
@@ -252,8 +266,9 @@
                 <div><div class="product">Chapati</div><div class="price">&#8364; 1,25</div><div class="description" lang="nl">Dun Indiaas brood.</div><div class="description" lang="en">Thin Indian bread.</div></div>
             </div>       
             <!-- Menu -->
+            <div class="imBookPage"><div class="header"><span lang="nl">Restaurant Menu</span><span lang="en">Restaurant Menu</span></div></div>
             <div class="imBookPage">
-                <div class="header">Voorgerechten</div>
+                <div class="header"><span lang="nl">Voorgerechten</span><span lang="en">Starters</span></div>
                 <div><div class="product">Papadam</div><div class="price">&#8364; 1,25</div><div class="description" lang="nl">Gekruide krokante pannenkoek. 2 stuks.</div><div class="description" lang="en">Spicy crispy pancake. 2 pieces.</div></div>
                 <div><div class="product">Murg Shorba (Chicken Soup)</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Op Indiase wijze gekruide kippensoep.</div><div class="description" lang="en">Indian style, spicy chicken soup.</div></div>
                 <div><div class="product">Mulligatawny Shorba</div><div class="price">&#8364; 4,00</div><div class="description" lang="nl">Op Indiase wijze gekruide kerriesoep met linzen en een schijfje citroen.</div><div class="description" lang="en">Indian style, spicy curry soup with lentils and a slice of lemon.</div></div>
@@ -267,7 +282,7 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Kip Gerechten</span> / <span lang="en">Chicken Dishes</span></div>
+                <div class="header"><span lang="nl">Kip Gerechten</span><span lang="en">Chicken Dishes</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Chicken Rogan Josh</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Kipfilet bereid in een melange van Indiase kruiden, een scheutje yoghurt en veel tomaten. Kortom een typisch Indiase curry. Dit gerecht is medium heet 
@@ -291,7 +306,7 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>
             <div class="imBookPage">
-                <div class="header">Lamsvlees Gerechten / Lambmeat Dishes</div>
+                <div class="header"><span lang="nl">Lamsvlees Gerechten</span><span lang="en">Lambmeat Dishes</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Lamb Rogan Josh</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Lamsvlees bereid in een melange van Indiase kruiden, een scheutje yoghurt en veel tomaten. Kortom een typisch Indiase curry. Dit gerecht is medium heet en kan indien u wenst pittig bereid worden.</div><div class="description" lang="en">Boneless lambmeat prepared with Indian spices, a little bit of yoghurt and lots of tomatoes.This is a typical Indian curry.</div></div>
@@ -313,7 +328,7 @@
                     the sauce is comparable to the ‘Butter Chicken.’</div></div>
             </div>
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Tandoori Gerechten</span> / <span lang="en">Tandoori Dishes</span></div>
+                <div class="header"><span lang="nl">Tandoori Gerechten</span><span lang="en">Tandoori Dishes</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Ch. Tikka Tandoori</div><div class="price">&#8364; 14,75</div><div class="description" lang="nl">Tandoori gemarineerde stukjes gefileerde kip uit de oven.</div><div class="description" lang="en">Tandoori marinated pieces of boneless chicken from the oven.</div></div>
@@ -325,7 +340,7 @@
             </div>
             <div class="imBookPage">
                 <div class="header">Biryani Specials</div>
-                <div class="header reduct"><span lang="nl">Gebakken rijst specialiteiten</span> / <span lang="en">Fried rice specialities</span></div>
+                <div class="header reduct"><span lang="nl">Gebakken rijst specialiteiten</span><span lang="en">Fried rice specialities</span></div>
                 <div class="subheader" lang="nl">Deze gerechten worden geserveerd met Chapatti (indiaas brood), Dal (linzen), Alu Mattar en Raeta.</div>
                 <div class="subheader" lang="en">All dishes are served with Chapatti, Dal (lentils), Alu Mattar and Raeta.</div>
                 <div><div class="product">Navrattan Biryani</div><div class="price">&#8364; 13,75</div><div class="description" lang="nl">Gemende groenten, kokosnoot, amandelen, cashewnoten, rozijnen,kardemom en Indiase Basmati rijst gebakken 
@@ -335,7 +350,7 @@
                     Indiase Basmati rijst gebakken in medium hete kruiden.</div><div class="description" lang="en">Lamb meat, paprika, coconut, almonds, cashew nuts, raisins, cardamom and Indian Basmati rice prepared in medium hot spices.</div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Vis Specialiteiten</span> / <span lang="en">Fish Specialities</span></div>
+                <div class="header"><span lang="nl">Vis Specialiteiten</span><span lang="en">Fish Specialities</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Fish Kashmiri</div><div class="price">&#8364; 15,75</div><div class="description" lang="nl">Vis bereid in een hete kerrie saus, bestaande uit fenegriek bladeren, mint saus en hete Kashmiri masala.</div><div class="description" lang="en">Fish cooked in a hot curry sauce, which is made of fenugreek leaves, mint sauce and hot Kashmiri masala.</div></div>
@@ -353,7 +368,7 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Garnalen Specialiteiten</span> / <span lang="en">Prawn Specialities</span></div>
+                <div class="header"><span lang="nl">Garnalen Specialiteiten</span><span lang="en">Prawn Specialities</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Mushroom Prawn</div><div class="price">&#8364; 17,75</div><div class="description" lang="nl">Garnalen en champignons bereid in een medium heet kerrie saus van Indiase gemengde kruiden.</div><div class="description" lang="en">Prawns and mushrooms cooked in a medium hot curry sauce of Indian mixed curry spices.</div></div>
@@ -366,7 +381,7 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Vegetarische Gerechten</span> / <span lang="en">Vegetarian Dishes</span></div>
+                <div class="header"><span lang="nl">Vegetarische Gerechten</span><span lang="en">Vegetarian Dishes</span></div>
                 <div class="subheader" lang="nl">Alle gerechten worden geserveerd met Rijst, Chapatti (indiaas brood), Dal (linzen) en Alu Mattar.</div>
                 <div class="subheader" lang="en">All dishes are served with Rice, Chapatti, Dal (lentils) and Alu Mattar.</div>
                 <div><div class="product">Mattar Paneer</div><div class="price">&#8364; 11,75</div><div class="description" lang="nl">Zelfgemaakte kaas en doperwten  bereid in een medium heet kerrie saus van Indiase gemengde kruiden en yoghurt.</div><div class="description" lang="en">Homemade cheese and green peas cooked in a medium hot curry sauce of Indian mixed curry spice and yoghurt.</div></div>
@@ -389,7 +404,7 @@
                     almonds, fenugreek leaves and mild  mixed curry spices.</div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Bijgerechten</span> / <span lang="en">Side Dishes</span></div>
+                <div class="header"><span lang="nl">Bijgerechten</span><span lang="en">Side Dishes</span></div>
                 <div><div class="product">Punjabi Raeta</div><div class="price">&#8364; 2,75</div><div class="description" lang="nl">Gekruide yoghurt met stukjes komkommer en tomaat.</div><div class="description" lang="en">Spicy yoghurt with pieces of cucumber and tomato.</div></div>
                 <div><div class="product">Mixed salad</div><div class="price">&#8364; 3,00</div><div class="description" lang="nl">Verse sla, tomaat, komkommer.</div><div class="description" lang="en">Fresh lettuce, tomatoes, cucumber.</div></div>
                 <div><div class="product">Saag (Palak)</div><div class="price">&#8364; 4,75</div><div class="description" lang="nl">Gekruide spinazie.</div><div class="description" lang="en">Spicy spinach.</div></div>
@@ -401,18 +416,21 @@
             </div>
             <!-- Catering -->
             <div class="imBookPage">
-                <div class="header"><span lang="nl">Catering</span> / <span lang="en"></span></div>
-                <div class="subheader" lang="nl"><p>Wij verzorgen catering voor bedrijven en particulieren vanaf 25 personen.
-                    Tevens verzorgen wij Surinaams/Hindoestaanse catering (vanaf 40 personen). Sim's Roti Shop - Willemsstraat 81 te Amsterdam.
-                </p><p>
-                    Voor meer informatie kunt u contact opnemen met Kamal tel.: 0640882454 of 020-3306555 (na 15.00 uur van woensdag t/m maandag)</p></div>
-                <div class="subheader" lang="en"></div>
+                <div class="header"><span lang="nl">Catering</span><span lang="en">Catering</span></div>
+                <div class="subheader vcard" lang="nl">
+                    <p>Wij verzorgen catering voor bedrijven en particulieren vanaf 25 personen.</p>
+                    <p>Tevens verzorgen wij Surinaams/Hindoestaanse catering (vanaf 40 personen). <span class="fn">Sim's Roti Shop</span> - <span class="addr"><span class="streat-address">Willemsstraat 81</span> te <span class="locality">Amsterdam</span></span>.</p>
+                    <p>Voor meer informatie kunt u contact opnemen met Kamal &#9990; <span class="tel">06 - 4088 2454</span> of &#9990; <span class="tel">020 - 330 6555</span> (na 15.00 uur van woensdag t/m maandag)</p></div>
+                <div class="subheader vcard" lang="en">
+                    <p>We provide catering for companies and individuals for parties starting at 25 persons.</p>
+                    <p>We can also offer Surinamese/Hindustani catering (starting at 40 persons). <span class="fn">Sim's Roti Shop</span> - <span class="addr"><span class="streat-address">Willemsstraat 81</span> in <span class="locality">Amsterdam</span></span>.</p>
+                    <p>For more information please contact  Kamal &#9990; <span class="tel">06 - 4088 2454</span> or &#9990; <span class="tel">020 - 330 6555</span> (after 3 pm from Wednesday to Monday)</p></div>
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>          
             <div class="imBookPage">
-                <div class="header"><span lang="nl"></span> / <span lang="en"></span></div>
+                <div class="header"><span lang="nl"></span><span lang="en"></span></div>
                 <div class="subheader" lang="nl"></div>
                 <div class="subheader" lang="en"></div>
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
@@ -443,7 +461,23 @@
 					$('.frontpage').hide();
 			});
 		});
-		$('div[lang="nl"]').addClass("emph");
+        </script>
+        <script type="text/javascript">
+            language('nl');
+            
+            function language( lang) {
+                if( lang == "nl") {
+		          $('div[lang="nl"]').addClass("emph").show();
+		          $('span[lang="nl"]').addClass("emph").show();
+		          $('div[lang="en"]').hide();
+		          $('span[lang="en"]').hide();
+                } else {
+		          $('div[lang="en"]').addClass("emph").show();
+		          $('span[lang="en"]').addClass("emph").show();
+		          $('div[lang="nl"]').hide();
+		          $('span[lang="nl"]').hide();
+                }
+            }
         </script>
         <div class="vcard" style="display:none;visibility:hidden;">
             <p class="fn">Balraj</p>
