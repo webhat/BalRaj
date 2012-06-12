@@ -17,24 +17,33 @@
             }
             .logo {
                 width : 100%;
-                top : 79px;
+                top : 57px;
+                left : -8px;
+            }
+            .menu {
+                position: fixed;
+                top: 105px;
+                z-index: 501;
+                width: 100%;
+                height: 31px;
+                
             }
             .frontpage {
                 background-image : url('1x1.gif');
-                position : absolute;
+                position : fixed;
                 text-align : center;
                 width : 853px;
                 top : 152px;
                 z-index : 10;
-                width : 853px;
-                height : 700px;
-                margin-left : 21.3%;
+                width : 100%;
+                height : 710px;
+                //left : 21.3%;
             }
             #myBook {
                 display : none;
-                position : absolute;
-                margin-right : 22%;
-                margin-left : 21.3%;
+                position : fixed;
+                //right : 22%;
+                left : 22%;
                 top : 152px;
                 width : 853px;
                 height : 700px;
@@ -75,17 +84,19 @@
                 margin-top: 5px;
                 color: #c00000;
                 float: left;
+                font-size: 130%;
             }
             .price {
                 color: #c00000;
                 float: right;
                 margin-right: 15px;
+                font-size: 140%;
             }
             .description {
                 clear:both;
                 margin-right: 15px;
                 color: grey;
-                font-size: 70%;
+                font-size: 80%;
                 font-style:italic;
             }
             .emph {
@@ -93,30 +104,52 @@
                 font-weight: bold;
             }
             .language {
-                position : relative;
-                right: -390px;
-                top: -25px;
-                z-index: 500;
+                position: relative;
+                top: 0px;
+                left: 350px;
+            }
+            #copyright {
+                position : absolute;
+                text-align : center;
+                margin-left : 33%;
+                display : block;
+                //height : 150px;
+                width : 450px;
+                bottom : 0px;
+                font-size : 10%;
+                font-family : "Helvetica", sans-serif;
+                z-index: 501;
+            }
+            .ontop {
+                z-index: 600;
             }
         </style>
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.imBookFlip-1.0.js"></script>
+        <script type="text/javascript" src="http://github.com/cowboy/jquery-hashchange/raw/v1.3/jquery.ba-hashchange.js"></script>
     </head>
     <body>
         <div class="logo central"><img width="171" height="73"
-                src="Balraj%20-%20Indian%20Restaurant-logo.jpg"
+                src="images/balraj-indian-restaurant-logo.png"
                 alt="BalRaj - Indian Restaurant - Logo" />
-            <div class="language">
+            <div class="menu"><div class="language">
                 <a href="#" onclick="language('nl');return false;"><img width="18" height="10" src="nl.jpg" alt="Nederlands - image by Timi1 - http://www.flickr.com/photos/timi/"/></a>
                 
                 <a href="#" onclick="language('en');return false;"><img width="18" height="10" src="en.jpg" alt="English - image by Timi1 - http://www.flickr.com/photos/timi/"/></a>
             </div>
-        </div>
-        <div class="frontpage"><div class="header"><span lang="nl">Voorpagina</span><span lang="en">Frontpage</span></div></div>
+                <a href="#" class="ontop" onclick="goToPage(1);setFront();console.log('home');return false;"><img class="ontop"  width="62" height="31" src="images/menu-home-124x62.png" alt="Go Home"/></a>
+                <!--a href="#" onclick="myBook.goToPage(2);clearFront();console.log('info');return false;"><img width="51" height="31" src="images/menu-info-103x62.png" alt="Go Info"/></a-->
+                <a href="#" class="ontop" onclick="goToPage(2);clearFront();console.log('afhalen');return false;"><img class="ontop"  lang="nl" width="75" height="31" src="images/menu-afhalen-149x62.png" alt="Go Afhalen"/><img lang="en" width="101" height="31" src="images/menu-takeaway-202x62.png" alt="Go TakeAway"/></a>
+                <a href="#" class="ontop" onclick="goToPage(12);clearFront();console.log('menukaart');return false;"><img class="ontop"  lang="nl" width="108" height="31" src="images/menu-menukaart-216x62.png" alt="Go MenuKaart"/><img lang="en" width="63" height="31" src="images/menu-menu-126x62.png" alt="Go Menu"/></a>
+                <a href="#" class="ontop" onclick="goToPage(22);clearFront();console.log('catering');return false;"><img class="ontop"  width="80" height="31" src="images/menu-catering-160x62.png" alt="Go Catering"/></a>
+            </div>
         <div class="central down" id="myBook" style="display:none;">
             <div class="imBookPage"><div class="header"><span lang="nl">Voorpagina</span><span lang="en">Frontpage</span></div></div>
             <!-- Afhaal -->
-            <div class="imBookPage"><div class="header"><span lang="nl">Afhaal Menu</span><span lang="en">Takeaway Menu</span></div></div>
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Afhaal Menu</span><span lang="en">Takeaway Menu</span></div>
+                <div><img width="400" height="789" class="central" src="images/ganesh-400x789.png" alt="Ganesh"/></div>
+            </div>
             <div class="imBookPage">
                 <div class="header"><span lang="nl">Voorgerechten</span><span lang="en">Starters</span></div>
                 <div><div class="product">Papadam</div><div class="price">&#8364; 1,00</div><div class="description" lang="nl">Gekruide krokante pannenkoek. 2 stuks.</div><div class="description" lang="en">Spicy crispy pancake. 2 pieces.</div></div>
@@ -266,7 +299,10 @@
                 <div><div class="product">Chapati</div><div class="price">&#8364; 1,25</div><div class="description" lang="nl">Dun Indiaas brood.</div><div class="description" lang="en">Thin Indian bread.</div></div>
             </div>       
             <!-- Menu -->
-            <div class="imBookPage"><div class="header"><span lang="nl">Restaurant Menu</span><span lang="en">Restaurant Menu</span></div></div>
+            <div class="imBookPage">
+                <div class="header"><span lang="nl">Restaurant Menu</span><span lang="en">Restaurant Menu</span></div>
+                <div><img width="400" height="529" class="central" src="images/nataraja-400x529.png" alt="Nataraja"/></div>
+            </div>
             <div class="imBookPage">
                 <div class="header"><span lang="nl">Voorgerechten</span><span lang="en">Starters</span></div>
                 <div><div class="product">Papadam</div><div class="price">&#8364; 1,25</div><div class="description" lang="nl">Gekruide krokante pannenkoek. 2 stuks.</div><div class="description" lang="en">Spicy crispy pancake. 2 pieces.</div></div>
@@ -438,6 +474,8 @@
                 <div><div class="product"></div><div class="price"></div><div class="description" lang="nl"></div><div class="description" lang="en"></div></div>
             </div>
         </div>
+            <div class="frontpage"><div class="header"><span lang="nl">Voorpagina</span><span lang="en">Frontpage</span></div></div>
+        </div>
         <script type="text/javascript">
 		$('#nextpage').click(function() {
 			$('#rightmenu').animate({
@@ -453,14 +491,29 @@
 		$(document).ready( function() {
 			myBook = $("#myBook").imBookFlip({
 					page_class: 'imBookPage',
-					goToPageSpeed: 300,
+					goToPageSpeed: 150,
 					autoFlipSpeed: 0
 			});
+			
 			myBook.create();
-			$('.frontpage').click(function() {
-					$('.frontpage').hide();
-			});
+		  $('.frontpage').click(function() {
+		      $('.frontpage').hide();
+		      myBook.goToPage(2);
+		  });
 		});
+		
+		function goToPage(id) {
+		  myBook.goToPage(id);
+		  location.hash = id;
+		}
+        </script>
+        <script type="text/javascript">
+		function clearFront() {
+		  $('.frontpage').hide();
+		}
+		function setFront() {
+		  $('.frontpage').show();
+		}
         </script>
         <script type="text/javascript">
             language('nl');
@@ -469,15 +522,55 @@
                 if( lang == "nl") {
 		          $('div[lang="nl"]').addClass("emph").show();
 		          $('span[lang="nl"]').addClass("emph").show();
+		          $('img[lang="nl"]').addClass("emph").show();
 		          $('div[lang="en"]').hide();
 		          $('span[lang="en"]').hide();
+		          $('img[lang="en"]').hide();
                 } else {
 		          $('div[lang="en"]').addClass("emph").show();
 		          $('span[lang="en"]').addClass("emph").show();
+		          $('img[lang="en"]').addClass("emph").show();
 		          $('div[lang="nl"]').hide();
 		          $('span[lang="nl"]').hide();
+		          $('img[lang="nl"]').hide();
                 }
             }
+        </script>
+        <script type="text/javascript">
+            $(function(){
+
+  // Bind the event.
+  $(window).hashchange( function(){
+    // Alerts every time the hash changes!
+    
+    if (location.hash == "" || 1 > location.hash.substring(1,location.hash.length)) {
+        location.hash = "1";
+    } else
+        console.log("Location: '"+ location.hash +"'");
+    
+    if( location.hash != "#1") $('.frontpage').hide();
+    else $('.frontpage').show();
+    
+    myBook.goToPage(location.hash.substring(1,location.hash.length));
+  })
+
+  // Trigger the event (useful on page load).
+ // $(window).hashchange();
+
+            });
+            
+            $(window).ready(function() { jQuery(window).trigger( 'hashchange' ); });
+            
+$(document).keydown(function(e){
+    if (e.keyCode == 37) { 
+       location.hash = (location.hash.substring(1,location.hash.length) - 2);
+       return false;
+    }
+    if (e.keyCode == 39) { 
+       location.hash = (location.hash.substring(1,location.hash.length) - 0 + 2);
+       return false;
+    }
+});
         </script>
         <div class="vcard" style="display:none;visibility:hidden;">
             <p class="fn">Balraj</p>
@@ -488,5 +581,6 @@
             </p>
             <span class="tel">+31206251428</span>
         </div>
+        <div id="copyright">&#169; 2012 <a href="http://specialbrands.net/">SpecialBrands</a></div>
     </body>
 </html>
